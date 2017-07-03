@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/taotao-manager-web/target/tomcat/work/Tomcat/localhost/localhost.iml" filepath="$PROJECT_DIR$/taotao-manager-web/target/tomcat/work/Tomcat/localhost/localhost.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotao-manager-service/src/main/main.iml" filepath="$PROJECT_DIR$/taotao-manager-service/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotao-manager-pojo/src/main/main1.iml" filepath="$PROJECT_DIR$/taotao-manager-pojo/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotao-manager-mapper/src/main/main2.iml" filepath="$PROJECT_DIR$/taotao-manager-mapper/src/main/main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotao-manager-web/src/main/main3.iml" filepath="$PROJECT_DIR$/taotao-manager-web/src/main/main3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taotao-manager-web/src/test/test.iml" filepath="$PROJECT_DIR$/taotao-manager-web/src/test/test.iml" />
+    </modules>
+  </component>
+</project>
