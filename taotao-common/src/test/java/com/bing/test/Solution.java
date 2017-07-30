@@ -1,53 +1,56 @@
 package com.bing.test;
 
+import org.junit.Test;
+
 import java.util.*;
 
+class ListNode {
+    int val;
+    ListNode next = null;
+
+    ListNode(int val) {
+        this.val = val;
+    }
+}
+
 public class Solution {
-
-    public static void main(String[] args) {
-
-        ArrayList<Integer> _ids = new ArrayList<Integer>();
-        ArrayList<Integer> _parents = new ArrayList<Integer>();
-        ArrayList<Integer> _costs = new ArrayList<Integer>();
-
-        Scanner in = new Scanner(System.in);
-        String line = in.nextLine();
-
-        while (line != null && !line.isEmpty()) {
-            if (line.trim().equals("0")) break;
-            String[] values = line.trim().split(" ");
-            if (values.length != 3) {
-                break;
-            }
-            _ids.add(Integer.parseInt(values[0]));
-            _parents.add(Integer.parseInt(values[1]));
-            _costs.add(Integer.parseInt(values[2]));
-            line = in.nextLine();
-        }
-        int res = resolve(_ids, _parents, _costs);
-
-        System.out.println(String.valueOf(res));
+    @Test
+    public void test() {
+        ListNode node1 = new ListNode(1);
+        ListNode node2 = new ListNode(2);
+        ListNode node3 = new ListNode(3);
+        ListNode node4 = new ListNode(4);
+        ListNode node5 = new ListNode(5);
+        node1.next=node2;
+        node2.next=node3;
+        node3.next=node4;
+        node4.next=node5;
+        FindKthToTail(node1,6);
     }
 
-    // n2
-    public static int resolve(ArrayList<Integer> ids, ArrayList<Integer> parents, ArrayList<Integer> costs) {
-
-        int sum = 0;
-        int max = 0;
-        for (int i = 0; i < ids.size(); i++) {
-            sum += costs.get(i);
-            for (int j = i; j < ids.size(); j++) {
-                if (parents.get(j) == ids.get(i)) {
-                    sum += costs.get(j);
-                    if (sum > max) {
-                        max = sum;
-                        sum = 0;
-                    }
-                    break;
-                }
+    public ListNode FindKthToTail(ListNode head, int k) {
+        if (k < 1 || head == null)
+            return null;
+        ListNode headFront = head;
+        ListNode headPre = head;
+        int i = 1;
+        while (headFront != null) {
+            if (i < k) {
+                headFront = headFront.next;
+                i++;
+                continue;
             }
+            headFront = headFront.next;
+            headPre = headPre.next;
         }
 
-        return max;
+        return headPre;
+    }
+
+
+    public int Fibonacci2(int n) {
+        if (n == 1 || n == 2)
+            return 1;
+        return Fibonacci2(n - 1) + Fibonacci2(n - 2);
     }
 }
