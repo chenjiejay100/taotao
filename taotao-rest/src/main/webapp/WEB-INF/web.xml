@@ -45,7 +45,7 @@
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
-    <!--拦截/rest/*这种请求-->
+    <!-ssorest/*这种请求-->
     <servlet-name>taotao-manager</servlet-name>
     <url-pattern>/rest/*</url-pattern>
   </servlet-mapping>
