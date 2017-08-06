@@ -2,6 +2,7 @@ var TTCart = {
 	load : function(){ // 加载购物车数据
 		
 	},
+	//在购物车中直接修改商品数量（我没做）
 	itemNumChange : function(){
 		$(".increment").click(function(){//＋
 			var _thisInput = $(this).siblings("input");

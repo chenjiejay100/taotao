@@ -18,7 +18,16 @@
 		<property name="prefix" value="/WEB-INF/jsp/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
-	
+
+	<!-- 拦截器配置 -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<!-- 拦截订单类请求 -->
+			<mvc:mapping path="/item/**"/>
+			<bean class="com.taotao.portal.interceptor.LoginInterceptor"/>
+		</mvc:interceptor>
+	</mvc:interceptors>
+
 	<!-- 资源映射 ，防止被<url-pattern>/</url-pattern>过滤掉了-->
 	<!--<mvc:resources location="/WEB-INF/css/" mapping="/css/**"/>
 	<mvc:resources location="/WEB-INF/js/" mapping="/js/**"/>-->

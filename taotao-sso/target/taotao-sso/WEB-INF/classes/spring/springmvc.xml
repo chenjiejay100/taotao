@@ -20,6 +20,7 @@
 	</bean>
 	
 	<!-- 资源映射 ，防止被<url-pattern>/</url-pattern>过滤掉了-->
-	<!--<mvc:resources location="/WEB-INF/css/" mapping="/css/**"/>
-	<mvc:resources location="/WEB-INF/js/" mapping="/js/**"/>-->
+	<mvc:resources location="/WEB-INF/css/" mapping="/css/**"/>
+	<mvc:resources location="/WEB-INF/js/" mapping="/js/**"/>
+	<mvc:resources location="/WEB-INF/images/" mapping="/images/**"/>
 </beans>

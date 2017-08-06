@@ -2,7 +2,7 @@
  Date: 2014-01-21 
  */
 function login() {
-    return location.href = "http://localhost:8084/user/showLogin";
+    return location.href = "http://localhost:8084/page/login";
 }
 function regist() {
     return location.href = "http://localhost:8084/user/showRegister";
