@@ -69,6 +69,6 @@
         </constructor-arg>
         <constructor-arg name="poolConfig" ref="jedisPoolConfig"></constructor-arg>
     </bean>-->
-    <!--<bean id="jedisClientCluster" clacom.taotao.sso.dao.JedisClient.impl.JedisClientCluster"></bean>-->
+    <!--<bean id="jedisClientCluster" clacom.taoorrest.sso.dao.JedisClient.impl.JedisClientCluster"></bean>-->
 
 </beans>

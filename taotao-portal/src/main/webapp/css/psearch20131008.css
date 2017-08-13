@@ -3022,8 +3022,6 @@ a:hover {
 		to(#f2f2f2));
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7f7f7",
 		endColorstr="#f2f2f2");
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr="
-		#f7f7f7 ", endColorstr=" #f2f2f2 ")"
 }
 
 #plist .notice-store {
@@ -3038,7 +3036,6 @@ a:hover {
 	display: block;
 	width: 15px;
 	height: 12px;
-	background: url(i/20130428A.png) no-repeat
 }
 
 #plist .btn-buy:hover, #plist .btns .btn-coll:hover, #plist .notice-store:hover,
@@ -3052,8 +3049,6 @@ a:hover {
 		to(#f6f6f6));
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f9f9",
 		endColorstr="#f6f6f6");
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr="
-		#f9f9f9 ", endColorstr=" #f6f6f6 ")"
 }
 
 #plist .btn-compare {
@@ -3070,7 +3065,6 @@ a:hover {
 	width: 11px;
 	height: 11px;
 	margin-right: 0;
-	background: url(i/20130603A.png) no-repeat -68px -50px;
 	font-size: 0
 }
 
@@ -3084,8 +3078,6 @@ a:hover {
 		to(#E4393C));
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#E4393C",
 		endColorstr="#E4393C");
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr="
-		#E4393C ", endColorstr=" #E4393C ")"
 }
 
 #plist .btn-compare-s-active span {
@@ -3102,8 +3094,6 @@ a:hover {
 		to(#f6f6f6));
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f9f9",
 		endColorstr="#f6f6f6");
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr="
-		#f9f9f9 ", endColorstr=" #f6f6f6 ")"
 }
 
 #plist .btn-compare-s-active:hover {
@@ -3114,8 +3104,6 @@ a:hover {
 		to(#E4393C));
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#E4393C",
 		endColorstr="#E4393C");
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr="
-		#E4393C ", endColorstr=" #E4393C ")"
 }
 
 #plist .item-book {
@@ -3162,7 +3150,6 @@ a:hover {
 	top: -7px;
 	width: 19px;
 	height: 19px;
-	background: url(i/20121225C.png) no-repeat -42px 0;
 	cursor: pointer
 }
 
@@ -3172,10 +3159,6 @@ a:hover {
 	top: 30px;
 	width: 20px;
 	height: 40px;
-	background: url(i/20121225C.png) no-repeat 0 0;
-	background: url(i/20121225C.png) no-repeat 0 0\0;
-	background: url(i/20121109A.gif) no-repeat \9\0;
-	*background: url(i/20121109A.gif) no-repeat 0 0
 }
 
 #plist .item-book .direct-left {

@@ -11,8 +11,10 @@
         <module name="taotao-manager-pojo" />
         <module name="taotao-manager-service" />
         <module name="taotao-manager-web" />
+        <module name="taotao-order" />
         <module name="taotao-portal" />
         <module name="taotao-rest" />
+        <module name="taotao-rest (1)" />
         <module name="taotao-search" />
         <module name="taotao-sso" />
       </profile>
@@ -24,6 +26,7 @@
       <module name="taotao-manager-pojo" target="1.7" />
       <module name="taotao-manager-service" target="1.7" />
       <module name="taotao-manager-web" target="1.7" />
+      <module name="taotao-order" target="1.7" />
       <module name="taotao-portal" target="1.7" />
       <module name="taotao-rest" target="1.7" />
       <module name="taotao-rest (1)" target="1.7" />

@@ -37,7 +37,7 @@ public class HttpClientTest {
         CloseableHttpClient httpClient = HttpClients.createDefault();
 
         //创建一个post对象
-        HttpPost post = new HttpPost("http://localhost:8081/sso/content/list/89");
+        HttpPost post = new HttpPost("http://localhost:8081/rest/content/list/89");
         //执行post请求
         CloseableHttpResponse response = httpClient.execute(post);
         String string = EntityUtils.toString(response.getEntity());
