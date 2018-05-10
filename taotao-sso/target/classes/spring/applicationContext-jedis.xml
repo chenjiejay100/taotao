@@ -33,7 +33,7 @@
     </bean>
     <!-- jedis客户端单机版 -->
     <bean id="redisClient" class="redis.clients.jedis.JedisPool">
-        <constructor-arg name="host" value="192.168.147.128"></constructor-arg>
+        <constructor-arg name="host" value="192.168.137.7"></constructor-arg>
         <constructor-arg name="port" value="6379"></constructor-arg>
         <constructor-arg name="poolConfig" ref="jedisPoolConfig"></constructor-arg>
     </bean>
@@ -69,6 +69,6 @@
         </constructor-arg>
         <constructor-arg name="poolConfig" ref="jedisPoolConfig"></constructor-arg>
     </bean>-->
-    <!--<bean id="jedisClientCluster" clacom.taotao.sso.dao.JedisClient.impl.JedisClientCluster"></bean>-->
+    <!--<bean id="jedisClientCluster" clacom.taoorrest.sso.dao.JedisClient.impl.JedisClientCluster"></bean>-->
 
 </beans>

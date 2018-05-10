@@ -147,6 +147,7 @@ public final class CookieUtils {
             Cookie cookie = new Cookie(cookieName, cookieValue);
             if (cookieMaxage > 0)
                 cookie.setMaxAge(cookieMaxage);
+            //要cookie共享，那么使用cookie的domain必须是相同的，例如"localhost"
             if (null != request) {// 设置域名的cookie
             	String domainName = getDomainName(request);
             	System.out.println(domainName);

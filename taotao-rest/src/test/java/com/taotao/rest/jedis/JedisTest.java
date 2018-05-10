@@ -17,7 +17,7 @@ public class JedisTest {
     @Test
     public void testJedisSingle() {
         //创建一个jedis的对象。
-        Jedis jedis = new Jedis("192.168.147.128", 6379);
+        Jedis jedis = new Jedis("192.168.137.7", 6379);
         //调用jedis对象的方法，方法名称和redis的命令一致。
         jedis.set("key1", "jedis test");
         String string = jedis.get("key1");
@@ -32,7 +32,7 @@ public class JedisTest {
     @Test
     public void testJedisPool() {
         //创建jedis连接池
-        JedisPool pool = new JedisPool("192.168.147.128", 6379);
+        JedisPool pool = new JedisPool("192.168.137.7", 6379);
         //从连接池中获得Jedis对象
 
         Jedis jedis = pool.getResource();
@@ -46,12 +46,12 @@ public class JedisTest {
     @Test
     public void testJedisCluster() {
         HashSet<HostAndPort> nodes = new HashSet<>();
-        nodes.add(new HostAndPort("192.168.147.128", 7001));
-        nodes.add(new HostAndPort("192.168.147.128", 7002));
-        nodes.add(new HostAndPort("192.168.147.128", 7003));
-        nodes.add(new HostAndPort("192.168.147.128", 7004));
-        nodes.add(new HostAndPort("192.168.147.128", 7005));
-        nodes.add(new HostAndPort("192.168.147.128", 7006));
+        nodes.add(new HostAndPort("192.168.137.7", 7001));
+        nodes.add(new HostAndPort("192.168.137.7", 7002));
+        nodes.add(new HostAndPort("192.168.137.7", 7003));
+        nodes.add(new HostAndPort("192.168.137.7", 7004));
+        nodes.add(new HostAndPort("192.168.137.7", 7005));
+        nodes.add(new HostAndPort("192.168.137.7", 7006));
 
         JedisCluster cluster = new JedisCluster(nodes);
 
@@ -74,7 +74,7 @@ public class JedisTest {
     @Test
     public void testSpringJedisSingle() {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring/applicationContext-*.xml");
-        JedisPool pool = (JedisPool) applicationContext.getBean("redisClient");
+        JedisPool pool = (JedisPool) applicationContext.getBean("jedisPool");
         Jedis jedis = pool.getResource();
         String string = jedis.get("key1");
         System.out.println(string);

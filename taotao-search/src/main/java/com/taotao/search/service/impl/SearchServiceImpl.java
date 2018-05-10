@@ -24,8 +24,9 @@ public class SearchServiceImpl implements SearchService {
         //设置分页
         query.setStart((page - 1) * rows);
         query.setRows(rows);
-        //设置默认搜素域
-        query.set("df", "item_keywords");
+        //设置默认搜素域，我设置成仅仅以title作为搜索域
+//        query.set("df", "item_keywords");
+        query.set("df", "item_title");
         //设置高亮显示
         query.setHighlight(true);
         query.addHighlightField("item_title");

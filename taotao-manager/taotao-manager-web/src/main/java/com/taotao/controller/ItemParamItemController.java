@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
+ * 具体商品的规格参数展现
  * Created by bing on 2017/7/2.
  */
 @Controller

@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.taotao.pojo.TbItemCat;
 import com.taotao.service.ItemCatService;
 
+/**
+ * 商品分类树展示
+ */
 @Controller
 @RequestMapping("/item/cat")
 public class ItemCatController {

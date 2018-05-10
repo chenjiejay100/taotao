@@ -12,6 +12,9 @@ import com.taotao.common.pojo.EUDataGridResult;
 import com.taotao.pojo.TbItem;
 import com.taotao.service.ItemService;
 
+/**
+ * 商品类操作
+ */
 @Controller
 public class ItemController {
 

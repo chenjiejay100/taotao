@@ -9,7 +9,7 @@
 	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 
 	<!-- 扫描包加载Service实现类 -->
-	<context:component-scan base-package="com.taotao.sso.service">
+	<context:component-scan base-package="com.taotao.rest.service">
 		<context:exclude-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
@@ -39,7 +39,7 @@
 	<!-- 3 切面 -->
 	<aop:config>
 		<aop:advisor advice-ref="txAdvice"
-			pointcut="execution(* com.taotao.sso.service.*.*(..))" />
+			pointcut="execution(* com.taotao.rest.service.*.*(..))" />
 	</aop:config>
 
 </beans>

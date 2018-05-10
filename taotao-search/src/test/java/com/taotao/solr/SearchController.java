@@ -14,7 +14,7 @@ import org.junit.Test;
 public class SearchController {
     @Test
     public void queryDocument() throws Exception {
-        SolrServer solrServer = new HttpSolrServer("http://192.168.147.130:8080/solr");
+        SolrServer solrServer = new HttpSolrServer("http://192.168.137.7:8080/solr");
         //创建一个查询对象
         SolrQuery query = new SolrQuery();
         //设置查询条件

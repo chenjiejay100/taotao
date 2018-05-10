@@ -6,11 +6,15 @@ package com.taotao.search.pojo;
 public class Item {
 
     private String id;
+    //
     private String title;
+    //
     private String sell_point;
     private long price;
     private String image;
+    //
     private String category_name;
+    //
     private String item_des;
 
     public String getId() {

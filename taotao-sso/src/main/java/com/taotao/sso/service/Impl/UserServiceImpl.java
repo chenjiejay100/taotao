@@ -100,7 +100,7 @@ public class UserServiceImpl implements UserService {
         user.setPassword(null);
         //把用户信息写入redis
         jedisClient.set(REDIS_USER_SESSION_KEY + ":" + token, JsonUtils.objectToJson(user));
-        //设置session(redis模拟session)的过期时间
+        //设置session(redis模拟session)的过期时间,30分钟
         jedisClient.expire(REDIS_USER_SESSION_KEY + ":" + token, SSO_SESSION_EXPIRE);
         //添加写cookie的逻辑，cookie的有效期是关闭浏览器就失效。
         CookieUtils.setCookie(request, response, "TT_TOKEN", token);
